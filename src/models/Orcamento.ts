@@ -23,13 +23,13 @@ class Orcamento extends Model<Orcamento> {
     idLead: number
 
   @BelongsTo(() => Lead)
-    lead: Lead;
-  
+    lead: Lead
+
   @Column(DataType.DATE)
     dat_inclusao: Date
 
   @HasMany(() => ItemOrcamento)
-    itens: ItemOrcamento[];
+    itens: ItemOrcamento[]
 }
 
 export default Orcamento

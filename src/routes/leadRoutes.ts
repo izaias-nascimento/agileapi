@@ -1,7 +1,7 @@
 import { Router } from 'express'
 // import isAuth from '../middleware/isAuth'
 
-import * as LeadController from '../controllers/leadController'
+import * as LeadController from '../controllers/LeadsController'
 
 const leadRouter = Router()
 

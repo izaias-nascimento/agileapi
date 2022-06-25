@@ -1,0 +1,109 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Api de Integração com o Sistema Agile Store",
+    "description": "Desenvolvida por Izaias Nascimento"
+  },
+  "host": "localhost:2222",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/lead": {
+      "get": {
+        "summary": "Lista de Leads",
+        "description": "Lista de Lead",
+        "parameters": [],
+        "responses": {},
+        "tags": [
+          "Lead"
+        ]
+
+      }
+    },
+    "/lead/{leadId}": {
+      "get": {
+        "summary": "Carrega lista de Lead",
+        "description": "Carrega Lead especifico pelo seu id",
+        "parameters": [
+         { 
+           "name": "leadId",
+          "in": "path",
+          "description": "ID do Lead que deseja carregar",
+          "required": true,
+          "type": "integer",
+          "format": "int64"
+        }
+        ],
+        "responses": {},
+        "tags": [
+          "Lead"
+        ]
+      }
+    },
+    "/orcamento": {
+      "get": {
+        "summary" : "Lista de Orçamentos ativos",
+        "description": "",
+        "parameters": [],
+        "responses": {},
+        "tags": [
+          "Orçamento"
+        ]
+      }
+    },
+    "/orcamento/{orcamentoId}": {
+      "get": {
+        "summary" : "Carrega de Orçamentos especifico no ID informado",
+        "description": "",
+        "parameters": [
+          { 
+            "name": "orcamentoId",
+           "in": "path",
+           "description": "ID do Orcamento que deseja carregar",
+           "required": true,
+           "type": "integer",
+           "format": "int64"
+         }
+        ],
+        "responses": {},
+        "tags": [
+          "Orçamento"
+        ]
+      }
+    },
+    "/produto": {
+      "get": {
+        "summary": "Lista de Produtos",
+        "description": "",
+        "parameters": [],
+        "responses": {},
+        "tags": [
+          "Produtos"
+        ]
+      }
+    },
+    "/produto/{produtoId}": {
+      "get": {
+        "summary": "Carrega Produto especifico do ID informado",
+        "description": "",
+        "parameters": [
+          { 
+            "name": "orcamentoId",
+           "in": "path",
+           "description": "ID do Orcamento que deseja carregar",
+           "required": true,
+           "type": "integer",
+           "format": "int64"
+         }
+        ],
+        "responses": {},
+        "tags": [
+          "Produtos"
+        ]
+      }
+    }
+  }
+}

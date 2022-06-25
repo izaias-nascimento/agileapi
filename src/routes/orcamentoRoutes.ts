@@ -1,18 +1,18 @@
 import { Router } from 'express'
 // import isAuth from '../middleware/isAuth'
 
-import * as ProdutoController from '../controllers/ProdutosController'
+import * as OrcamentoController from '../controllers/OrcamentosController'
 
-const produtosRouter = Router()
+const orcamentoRouter = Router()
 
-produtosRouter.get('/produto', ProdutoController.index)
+orcamentoRouter.get('/orcamento', OrcamentoController.index)
 
-// produtosRouter.post("/produto", ProdutoController.store);
+// orcamentoRouter.post("/produto", OrcamentoController.store);
 
-produtosRouter.get('/produto/:produtoId', ProdutoController.show)
+orcamentoRouter.get('/orcamento/:orcamentoId', OrcamentoController.show)
 
-// produtosRouter.put('/produto/:produtoId', ProdutoController.update)
+// orcamentoRouter.put('/produto/:produtoId', OrcamentoController.update)
 
-// produtosRouter.delete("/queue/:queueId", isAuth, ProdutoController.remove);
+// orcamentoRouter.delete("/queue/:queueId", isAuth, OrcamentoController.remove);
 
-export default produtosRouter
+export default orcamentoRouter

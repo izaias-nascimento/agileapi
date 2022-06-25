@@ -1,10 +1,10 @@
 import { Request, Response } from 'express'
-import ListaProdutosService from '../services/produtosServices/ListaProdutosService'
+import ListaLeadsService from '../services/leadServices/ListaLeadService'
 
 export const index = async (req: Request, res: Response): Promise<Response> => {
-  const produtos = await ListaProdutosService()
+  const leads = await ListaLeadsService()
 
-  return res.status(200).json(produtos)
+  return res.status(200).json(leads)
 }
 
 export const store = async (req: Request, res: Response): Promise<Response> => {

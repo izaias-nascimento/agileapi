@@ -13,44 +13,43 @@ import Orcamento from './Orcamento'
 class Lead extends Model<Lead> {
   @PrimaryKey
   @Column(DataType.NUMBER)
-  id: number
+    id: number
 
   @Column(DataType.TEXT)
-  nome: string
+    nome: string
 
   @Column(DataType.DATE)
-  dat_inclusao: Date
+    dat_inclusao: Date
 
   @Column(DataType.TEXT)
-  responsavel: string
+    responsavel: string
 
   @Column(DataType.NUMBER)
-  fone: number
+    fone: number
 
   @Column(DataType.NUMBER)
-  dddfone: number
+    dddfone: number
 
   @Column(DataType.NUMBER)
-  dddCelular: number
+    dddCelular: number
 
   @Column(DataType.NUMBER)
-  celular: number
+    celular: number
 
   @Column(DataType.TEXT)
-  email: string
+    email: string
 
   @Column(DataType.TEXT)
-  tipoPessoa: string
-  
+    tipoPessoa: string
+
   @Column(DataType.TEXT)
-  canal: string
-  
+    canal: string
+
   @Column(DataType.TEXT)
-  motivacao: string
+    motivacao: string
 
   @HasMany(() => Orcamento)
-  orcamento: Orcamento
-    
+    orcamento: Orcamento
 }
 
 export default Lead
